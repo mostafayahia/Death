@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="free.elmasry.death"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/death_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".DeathEntryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="unspecified"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="free.elmasry.death.ListenDoaaActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="free.elmasry.death.TemplateActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+    </application>
+
+</manifest>
